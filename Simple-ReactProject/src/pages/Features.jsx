@@ -7,4 +7,4 @@ function Feature() {
   );
 }
 
-export default Home;
+export default Feature;

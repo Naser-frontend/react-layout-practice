@@ -1,5 +1,5 @@
 
-function Regester() {
+function Register() {
   return (
     <div>
         <h1>this is register page</h1>
@@ -7,4 +7,4 @@ function Regester() {
   );
 }
 
-export default Home;
+export default Register;

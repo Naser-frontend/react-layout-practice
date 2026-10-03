@@ -7,4 +7,4 @@ function Pricing() {
   );
 }
 
-export default Home;
+export default Pricing;

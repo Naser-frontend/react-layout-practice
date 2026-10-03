@@ -7,4 +7,4 @@ function Blog() {
   );
 }
 
-export default Home;
+export default Blog;

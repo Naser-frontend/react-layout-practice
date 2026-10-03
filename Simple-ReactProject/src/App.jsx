@@ -1,8 +1,5 @@
-
+import MainRoute from "./Routes/MainRoute";
 function App(){
-  return (
-  
-  )
-  
+  return  <MainRoute/>
 }
 export default App;
