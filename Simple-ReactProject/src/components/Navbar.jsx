@@ -1,28 +1,32 @@
 import logo from "../assets/images/icons/Logo (7).svg"
+import {Link} from "react-router-dom"
 function Navbar(){
   return(
-    <nav className="flex items-center justify-between bg-white px-8 py-4 shadow-sm">
-        <div>
+            // flex items-center justify-between bg-white px-8 py-4 shadow-sm
+    // <li><a href="" className="font-medium text-gray-700 transition hover:text-green-500">Blog</a></li>
+
+    
+    <nav className="flex justify-between items-center bg-white px-8 py-4 shadow-lg ">
+     {/* log part */}
+     <div>
+      <Link to="/">
       <img src={logo} alt="My logo" />
-    </div>
-    <div>
-      
-      <ul className="flex items-center gap-8">
-        <li><a  href="" className="font-medium text-gray-700 transition hover:text-green-500">Home</a></li>
-        <li><a href="" className="font-medium text-gray-700 transition hover:text-green-500">Feature</a></li>
-        <li><a href="/Community" className="font-medium text-gray-700 transition hover:text-green-500">Community</a></li>
-        <li><a href="" className="font-medium text-gray-700 transition hover:text-green-500">Blog</a></li>
-        <li><a href="" className="font-medium text-gray-700 transition hover:text-green-500">Pricing</a></li>
+      </Link>
+     </div>
+     {/* links part */} 
+     <div className="">
+        <Link className="font-medium text-gray-700 transition hover:text-green-500 p-5" to="/">Home</Link>
+        <Link className="font-medium text-gray-700 transition hover:text-green-500 p-5"  to="/Features">features</Link>
+        <Link className="font-medium text-gray-700 transition hover:text-green-500 p-5" to="/Community">Community</Link>
+        <Link className="font-medium text-gray-700 transition hover:text-green-500 p-5" to="/Blog">Blog</Link>
+        <Link className="font-medium text-gray-700 transition hover:text-green-500 p-5" to="/Pricing">Pricing</Link>
+        <Link className="font-medium text-white bg-green-600 rounded-[10px] transition px-7 p-3" to="/Register">Register</Link>
+     
+     </div>
+        
 
-        <li><a href="" className="rounded-2xl font-medium text-gray-700 transition p-4 bg-green-500 ">regester now</a></li>
-
-  
-       
-
-      </ul>
-    </div>
     </nav>
  
   )
 }
-export default Navbar
+export default Navbar;
