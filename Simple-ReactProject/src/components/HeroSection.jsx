@@ -17,7 +17,7 @@ function HeroSection(){
           <img className="w-[400px]" src={Heroimg} alt="Hero image" />
        </div>
 
-     </div>
+     </div>     
     )
 }
 export default HeroSection;

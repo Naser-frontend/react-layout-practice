@@ -6,7 +6,7 @@ function Navbar(){
     // <li><a href="" className="font-medium text-gray-700 transition hover:text-green-500">Blog</a></li>
 
     
-    <nav className="flex justify-between items-center bg-white px-8 py-4 shadow-lg ">
+    <nav className="flex justify-around items-center bg-white px-8 py-4 shadow-lg ">
      {/* log part */}
      <div>
       <Link to="/">
