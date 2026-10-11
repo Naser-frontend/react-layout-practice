@@ -41,19 +41,19 @@ function Clients(){
                <div className="flex mt-7 justify-around  items-center ">
 
                  <div className="text-center w-[300px] ">
-                    <img className="mx-auto " src={Icon8} alt="icon8" />
+                    <img className="mx-auto w-15" src={Icon8} alt="icon8" />
                     <h3 className="text-3xl mt-7">Membership Organisations</h3>
                     <p  className="mt-5">Our membership management software provides full automation of membership renewals and payments</p>
                 </div>
 
                   <div className="text-center w-[300px] ">
-                    <img className="mx-auto" src={Icon9} alt="icon9" />
+                    <img className="mx-auto w-15" src={Icon9} alt="icon9" />
                     <h3 className="text-3xl mt-7">National Associations</h3>
                     <p  className="mt-5">Our membership management software provides full automation of membership renewals and payments</p>
                 </div>
 
                   <div className="text-center w-[300px] ">
-                    <img className="mx-auto" src={Icon10} alt="icon1-" />
+                    <img className="mx-auto w-15" src={Icon10} alt="icon1-" />
                     <h3 className="text-3xl mt-7">Clubs And Groups</h3>
                     <p  className="mt-5">Our membership management software provides full automation of membership renewals and payments</p>
                 </div>
