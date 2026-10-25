@@ -3,6 +3,7 @@ import Clients from "../components/Clients"
 import Overview from "../components/Overview";
 import Design from "../components/Design"
 import Smith from "../components/Smith"
+import Article from "../components/Article"
 
 
 function Home() {
@@ -17,6 +18,8 @@ function Home() {
       <Design/>
 
       <Smith/>
+
+      <Article/>
     </div>
   );
 }
