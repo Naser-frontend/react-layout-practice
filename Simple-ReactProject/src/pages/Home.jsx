@@ -4,6 +4,7 @@ import Overview from "../components/Overview";
 import Design from "../components/Design"
 import Smith from "../components/Smith"
 import Article from "../components/Article"
+import Pellentesque from "../components/Pellentesque"
 
 
 function Home() {
@@ -20,6 +21,8 @@ function Home() {
       <Smith/>
 
       <Article/>
+
+      <Pellentesque/>
     </div>
   );
 }
