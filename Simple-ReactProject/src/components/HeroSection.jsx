@@ -1,23 +1,19 @@
 import { Link } from "react-router-dom";
- import Heroimg from "../assets/images/icons/Illustration.svg"
-function HeroSection(){
-    return(
-     <div className="flex p-20 justify-between items-center bg-gray-100 h-[600px]">
-        {/*  thsi div is fore left paragraphs */}
-          <div className="">
-        <h1 className="text-7xl">Lessons and insights <br />
-         <span className="text-green-600 ">from 8 years</span></h1>
-         <p className="mt-5 text-2xl">Where to grow your business as a photographer: site or social media?</p>
-        <div className="mt-5">
-          <Link className="bg-green-600 mt-7 p-2 px-5 rounded-[5px]" to="/Register">Register</Link>
-        </div>
-       </div>
-       {/*  this dev is for image right  */}
-       <div>
-          <img className="w-[400px]" src={Heroimg} alt="Hero image" />
-       </div>
+import Heroimg from "../assets/images/icons/Illustration.svg";
 
-     </div>     
-    )
+function HeroSection() {
+  return (
+    <section className="bg-gray-100">
+      <div className="mx-auto grid min-h-[480px] w-full max-w-7xl items-center gap-10 px-6 py-14 sm:px-8 md:grid-cols-2 md:py-20 lg:px-10">
+        <div className="max-w-2xl">
+          <h1 className="text-4xl font-semibold leading-tight text-gray-700 sm:text-5xl lg:text-6xl">Lessons and insights <span className="block text-green-600">from 8 years</span></h1>
+          <p className="mt-5 max-w-xl text-base leading-7 text-gray-600 sm:text-lg">Where to grow your business as a photographer: site or social media?</p>
+          <Link className="mt-7 inline-flex rounded-md bg-green-600 px-5 py-3 font-medium text-white transition hover:bg-green-700" to="/Register">Register</Link>
+        </div>
+        <div className="flex justify-center md:justify-end"><img className="w-full max-w-[400px]" src={Heroimg} alt="People working with a digital platform" /></div>
+      </div>
+    </section>
+  );
 }
+
 export default HeroSection;

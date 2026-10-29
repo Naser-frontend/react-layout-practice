@@ -1,4 +1,4 @@
-import img from "../assets/images/image 9.jpg"
+﻿import img from "../assets/images/image 9.jpg"
 import Icon3 from "../assets/images/icons/Logo (6).svg"
 import Icon4 from "../assets/images/icons/Logo (3).svg"
 import Icon5 from "../assets/images/icons/Logo (4).svg"
@@ -10,8 +10,8 @@ function Smith() {
   const customerLogos = [Icon3, Icon4, Icon5, Icon6, Icon7, Icon8]
 
   return (
-    <section className="bg-gray-50 px-5 py-10 sm:px-8 lg:px-12">
-      <div className="mx-auto grid max-w-6xl items-center gap-8 md:grid-cols-[minmax(220px,300px)_1fr] md:gap-12">
+    <section className="bg-gray-50 py-10 sm:py-12">
+      <div className="mx-auto grid w-full max-w-7xl items-center gap-8 px-6 sm:px-8 md:grid-cols-[minmax(220px,300px)_1fr] md:gap-12 lg:px-10">
         <div className="flex justify-center">
           <img
             className="h-48 w-48 rounded-md object-cover shadow-md sm:h-56 sm:w-56"
@@ -57,3 +57,4 @@ function Smith() {
 }
 
 export default Smith
+

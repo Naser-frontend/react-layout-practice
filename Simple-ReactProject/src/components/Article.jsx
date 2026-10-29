@@ -1,4 +1,4 @@
-import articleImage1 from "../assets/images/image 18.jpg"
+﻿import articleImage1 from "../assets/images/image 18.jpg"
 import articleImage2 from "../assets/images/image 19.jpg"
 import articleImage3 from "../assets/images/image 20.jpg"
 
@@ -22,16 +22,16 @@ const articles = [
 
 function Article() {
   return (
-    <section className="bg-white px-5 py-12 sm:px-8 sm:py-16">
-      <div className="mx-auto max-w-6xl">
+    <section className="bg-white py-12 sm:py-16">
+      <div className="mx-auto w-full max-w-7xl px-6 sm:px-8 lg:px-10">
         <header className="mx-auto mb-8 max-w-2xl text-center">
           <h2 className="text-2xl font-semibold tracking-tight text-gray-700 sm:text-3xl">
             Caring is the new marketing
           </h2>
           <p className="mt-2 text-sm leading-6 text-gray-600">
             The Nextcent blog is the best place to read about the latest membership insights,
-            <br className="hidden sm:block" /> trends and more. See who’s joining the community, read about how our community
-            <br className="hidden sm:block" /> are increasing their membership income and lot’s more.
+            <br className="hidden sm:block" /> trends and more. See who&apos;s joining the community, read about how our community
+            <br className="hidden sm:block" /> are increasing their membership income and lots more.
           </p>
         </header>
 
@@ -51,7 +51,7 @@ function Article() {
                   className="inline-flex items-center gap-2 text-sm font-semibold text-green-600 transition-colors hover:text-green-700"
                   href="#blog"
                 >
-                  Readmore <span aria-hidden="true">→</span>
+                  Read more <span aria-hidden="true">&rarr;</span>
                 </a>
               </div>
             </article>
@@ -63,3 +63,4 @@ function Article() {
 }
 
 export default Article
+

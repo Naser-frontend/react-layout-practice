@@ -1,55 +1,34 @@
-import icon1 from "../assets/images/icons/Icon (3).svg"
-import icon2 from "../assets/images/icons/Icon (4).svg"
-import icon3 from "../assets/images/icons/Icon (5).svg"
-import icon4 from "../assets/images/icons/Icon (6).svg"
+﻿import icon1 from "../assets/images/icons/Icon (3).svg";
+import icon2 from "../assets/images/icons/Icon (4).svg";
+import icon3 from "../assets/images/icons/Icon (5).svg";
+import icon4 from "../assets/images/icons/Icon (6).svg";
 
-function Overview(){
-    return(
-        <section className="bg-gray-100 flex justify-around  items-center  h-64">
-            <div className=" flex flex-col ml-auto">
-                 <h2 className="font-bold text-[35px]">Helping a local </h2> 
-                 <h2 className="text-green-600 text-2xl">business reinvent itself</h2> 
-                 <p className="text-[20px]">We reached here with our hard work and dedication</p>
+function Overview() {
+  const stats = [
+    [icon1, "2,245,341", "Members"],
+    [icon2, "828,867", "Bookings"],
+    [icon3, "46,328", "Clubs"],
+    [icon4, "1,926,436", "Payments"],
+  ];
+
+  return (
+    <section className="bg-gray-100">
+      <div className="mx-auto grid w-full max-w-7xl items-center gap-8 px-6 py-12 sm:px-8 md:grid-cols-2 md:py-16 lg:px-10">
+        <div>
+          <h2 className="text-3xl font-bold leading-tight text-gray-800 sm:text-4xl">Helping a local <span className="block text-green-600">business reinvent itself</span></h2>
+          <p className="mt-3 text-gray-600">We reached here with our hard work and dedication</p>
+        </div>
+        <div className="grid grid-cols-2 gap-x-5 gap-y-7 sm:gap-x-8">
+          {stats.map(([icon, value, label]) => (
+            <div key={label} className="flex items-center gap-3">
+              <img className="h-10 w-10 object-contain" src={icon} alt="" />
+              <div><p className="text-xl font-bold text-gray-800 sm:text-2xl">{value}</p><p className="text-sm text-gray-600">{label}</p></div>
             </div>
-            <div className="flex ml-auto flex-col m-auto ml-10">
-
-               <div className="flex ">
-                 <div className="w-35 flex">
-                    <img className="w-10 self-center " src={icon1} alt="" />
-                   <div className="flex flex-col p-2 justify-center">
-                     <p className="text-[20px]">2,245,341 </p>
-                     <p>Members</p>
-                   </div>
-                </div>
-                <div className="w-35 flex">
-                    <img className="w-25 self-center " src={icon2}  alt="" />
-                   <div className="flex flex-col p-2 justify-center">
-                     <p  className="text-[20px]">828,867</p>
-                    <p>Bookings</p>
-                   </div>
-                </div>
-               </div>
-                
-                <div className="flex">
-                    
-                <div className="w-35 flex">
-                    <img className="w-10 self-center " src={icon3}  alt="" />
-                   <div className="flex flex-col p-2 justify-center">
-                     <p  className="text-[20px]">46,328</p>
-                    <p>Clubs</p>
-                   </div>
-                </div>
-                <div className="w-35 flex">
-                    <img className="w-10 self-center " src={icon4}  alt="" />
-                  <div className="flex flex-col p-2 justify-center">
-                      <p  className="text-[20px]">1,926,436</p>
-                    <p>Payments</p>
-                  </div>
-                </div>
-                </div>
-
-            </div>
-        </section>
-    )
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 }
-export default Overview
+
+export default Overview;

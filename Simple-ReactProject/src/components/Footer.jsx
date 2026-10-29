@@ -23,7 +23,7 @@ function Footer() {
 
   return (
     <footer className="bg-[#263238] text-white">
-      <div className="mx-auto grid max-w-[1230px] grid-cols-1 gap-10 px-6 py-12 sm:px-10 md:grid-cols-[2fr_0.8fr_0.8fr_1.35fr] md:gap-12 md:py-[72px]">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-6 py-12 sm:px-8 lg:px-10 md:grid-cols-[2fr_0.8fr_0.8fr_1.35fr] md:gap-12 md:py-[72px]">
         <div>
           <a href="/" aria-label="Nexcent home" className="inline-flex items-center">
             <img src={logo} alt="Nexcent" className="h-9 w-auto brightness-0 invert" />
@@ -53,5 +53,6 @@ function FooterColumn({ title, links }) {
 }
 
 export default Footer;
+
 
 

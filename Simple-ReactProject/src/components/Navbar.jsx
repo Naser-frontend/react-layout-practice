@@ -1,10 +1,10 @@
-import logo from "../assets/images/icons/Logo (7).svg"
+﻿import logo from "../assets/images/icons/Logo (7).svg"
 import { Link } from "react-router-dom"
 
 function Navbar() {
   return (
     <nav className="w-full border-b border-gray-100 bg-white/95 shadow-sm">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-8">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 sm:px-8 lg:px-10">
         <Link to="/" aria-label="Home" className="shrink-0">
           <img src={logo} alt="My logo" className="h-10 w-auto" />
         </Link>
@@ -23,3 +23,4 @@ function Navbar() {
 }
 
 export default Navbar
+
